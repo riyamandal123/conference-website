@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+    background: none;
+}
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation-items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+.navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+a.active,a.hover {
+    background: #1b9bff;
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px; 
+    }
+    .navigation-items {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .navigation-items a {
+        font-size: 1.2em;
+    }
+    .container .card {
+        height: 600px;
+    }
+    .container .card {
+        height: 1000px; 
+    }
+}
+#home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url("https://revaeduin.s3.ap-south-1.amazonaws.com/uploads/images/642bf9dc2bc7b1680603612.webp");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.home-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 60, 51, 0.803);
+}
+.home-content p span{
+    font-size: 2em;gap: 10px;
+}
+.home-content p{
+    font-size: 1.6em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+  }
+.read-more{
+    text-decoration: none;
+    border-radius: 80px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 1em;
+    color: black;
+    margin-left: 700px;
+}
+.read-more:hover {
+    background-color: #000;
+    color: #fff;
+}
+section#about-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #232323;
+    overflow: hidden;
+    padding: 20px 20px;
+}
+.container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-section .container .card {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+}
+.container .card h1 {
+    margin-top: 50px;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+.container .card p {
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2em;
+    max-width: 100%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    word-break: break-all; 
+    text-align: justify;
+}
+
+
+iframe {
+    margin-top: 30px;
+    padding-left: 60px;
+    width: 700px;
+    margin-bottom: 120px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.map-container {
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.contact-info {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 250px;
+}
+
+.contact-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+footer a {
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }

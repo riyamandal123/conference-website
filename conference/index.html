@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conference website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function scrollToAbout() {
+        var aboutSection = document.getElementById("about-section");
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><img src="smartme-high-resolution-logo-transparent.png" alt=""
+      /></a>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#home">Home</a>
+          <a href="#">Call for Papers</a>
+          <a href="#">Important Dates</a>
+          <a href="about.html">About</a>
+          <a href="registration.html">Registration</a>
+          <a href="commitee.html">committee</a>
+        </div>
+      </div>
+    </header>
+    <section id="home">
+      <div class="home-overlay">
+        <div class="home-content">
+          <p>
+            <span>SMARTME - 2024</span> <br />July 12 & 13 - School of
+            Mechanical Engineering, REVA University, Bangalore, India<br />Association
+            with <br />AUTODESK
+          </p>
+          <a href="#about-section" class="read-more" onclick="scrollToAbout()"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about-section">
+      <div class="container">
+        <div class="card">
+          <h1>ABOUT THE CONFERENCE</h1>
+          <p>
+            8th International Conference on “Sustainable Materials And Recent
+            Trends in Mechanical Engineering” (SMARTME-2024)” will be held at
+            REVA University, Bengaluru, India.The conference will have plenary
+            lectures followed by parallel sessions. Plenary lectures will be
+            delivered by eminent personalities of repute to introduce the theme
+            of the conference. Conference is to provide a platform to PG
+            students, Researchers, Young aspiring Engineers & Academicians to
+            present their research findings of their respective domains of
+            knowledge and share ideas and views.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7206595752964!2d77.6346118!3d13.116874500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae191736187a37%3A0x3092096ba7fb4c9b!2sREVA%20UNIVERSITY!5e0!3m2!1sen!2sin!4v1708526785702!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contact-info">
+        <h2>For Correspondence Contact:</h2>
+        <div class="contact-box">
+          <p>Dr. N Jegadeeswaran</p>
+          <p>+9198802 31308</p>
+        </div>
+        <div class="contact-box">
+          <p>Dr Nikhil Rangaswamy</p>
+          <p>+91 9538608479</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="#"
+        >&copy; Copyright 2024 <br />
+        2024 Sustainable Materials and Recent Trends in Mechanical Engineering.
+        All rights Reserved.</a
+      >
+    </footer>
+  </body>
+</html>

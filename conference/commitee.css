@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+    background: none;
+}
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation-items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+.navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+a.active,a.hover {
+    background: #1b9bff;
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px; 
+    }
+    .navigation-items {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .navigation-items a {
+        font-size: 1.2em;
+    }
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+footer a {
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }
+  #committee {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    background-image: url("https://revaeduin.s3.ap-south-1.amazonaws.com/uploads/album/1637408976_9ec6b1909248fd1bd7fa.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+.committee-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 60, 51, 0.803);
+}
+.committee-content h1 {
+    text-align: center;
+    margin-top: 180px;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.committee-members {
+    padding: 20px;
+    width: 100%;
+    max-height: 500vh;
+}
+.committee-members h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.patrons {
+    padding-top: 20px;
+}
+.member1, .member2, .member3, .member4, .member9, .member10{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 0 20px;
+    text-align: center;
+    padding-left: 70px;
+}
+.member1 img ,.member2 img,.member3 img,.member4 img, .member9 img, .member10 img{
+    width: 100%;
+    padding-top: 20px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+.member1 p, .member2 p, .member3 p, .member4 p,.member5 p, .member6 p, .member7 p, .member9 p, .member10 p, .member11 p {
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+.member5, .member6, .member7,.member11, .member12, .member13 {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 5px);
+    padding: 0 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.member5 img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding-top: 70px;
+}
+.member6 img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.member7 img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.section3 h2 {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.section4 h2 {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.section4 .member8, .section4 .member16{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 0 20px;
+    text-align: center;
+    padding-left: 70px;
+}
+.member8 img, .member8 p{
+    width: 100%;
+    padding-top: 20px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.section4 .member16 img{
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 50%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    height: auto;
+
+}
+.member16 p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.section5 h2, .section6 h2 {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.member11 img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.member12 img {
+    width: 100%;
+    max-width: 220px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.member13 img {
+    width: 100%;
+    max-width: 180px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.member12 p {
+    margin-top: 20px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+.member13 p {
+    margin-top: 5px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+.section7 .member14{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    padding: 0 20px;
+    text-align: center;
+    padding-left: 70px;
+}
+.member15{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 20px;
+    text-align: center;
+    padding-left: 70px;
+}
+.member14 img{
+    width: 100%;
+    padding-top: 5px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+.member15 img{
+    width: 100%;
+    padding-top: 10px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+.member14 p, .member15 p {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 100px;
+}
+.section7 h2{
+    padding-top: 20px;
+    text-transform: uppercase;
+}

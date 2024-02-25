@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+    background: none;
+}
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation-items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+.navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+a.active,a.hover {
+    background: #1b9bff;
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px; 
+    }
+    .navigation-items {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .navigation-items a {
+        font-size: 1.2em;
+    }
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+footer a {
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }
+  #previous-conference {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    overflow: hidden;
+    background-image: url("https://www.highereducationdigest.com/wp-content/uploads/2020/01/IMG-9.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .previous-conference-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 60, 51, 0.803);
+}
+.previous-conference-content h1 {
+    text-align: center;
+    margin-top: 220px;
+    font-size: 2em;
+}
+p {
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 30px;
+}
+.images {
+    padding-top: 35px;
+}
+.image1, .image2{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 0 20px;
+    text-align: center;
+    padding-left: 70px;
+    margin-bottom: 100px;
+}
